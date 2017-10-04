@@ -1,7 +1,7 @@
 /**************/
 /*** CONFIG ***/
 /**************/
-var PORT = 8080;
+var PORT = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 
 
 /*************/
