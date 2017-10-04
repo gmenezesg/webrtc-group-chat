@@ -247,8 +247,7 @@
                 console.log("Requesting access to local audio / video inputs");
 
 
-                navigator.getUserMedia = ( navigator.mediaDevices.getUserMedia ||
-                       navigator.getUserMedia ||
+                navigator.getUserMedia = ( navigator.getUserMedia ||
                        navigator.webkitGetUserMedia ||
                        navigator.mozGetUserMedia ||
                        navigator.msGetUserMedia);
@@ -258,7 +257,7 @@
                     element.srcObject = stream;
                  };
 
-                navigator.getUserMedia({"audio":USE_AUDIO, "video":USE_VIDEO},
+                navigator.mediaDevices.getUserMedia({"audio":USE_AUDIO, "video":USE_VIDEO},
                     function(stream) { /* user accepted access to a/v */
                         console.log("Access granted to audio/video");
                         local_media_stream = stream;
