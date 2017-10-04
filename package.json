@@ -1,13 +1,14 @@
 {
   "name": "",
   "version": "",
-  "description": "About =====",
+  "description": "WebRTC Signaling Server",
   "scripts": {
-    "start": "node signaling-server"
+    "start": "node signaling-server.js"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "socket.io": "^1.4.8"
-  }
+  },
+  "main": "signaling-server.js"
 }
